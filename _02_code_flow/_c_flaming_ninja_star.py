@@ -19,15 +19,29 @@ if __name__ == '__main__':
     flameSize = 130;        # the length of the flaming arms
     
     # Make a new turtle
-    
+    Sebastian = turtle.Turtle()
     # Make the turtle shape 'turtle', .shape('turtle')
-    
+    Sebastian.shape('turtle')
     # Set the turtle width to 2
-    
+    Sebastian.width(2)
     # Set the turtle speed to 0 (fastest)
-    
+    Sebastian.speed(0)
     # Use a for loop to repeat all of the code below ONE time (we will change this later)
-        
+    for i in range(50):
+        Sebastian.fillcolor('orange')
+        Sebastian.begin_fill()
+        Sebastian.right(1/8)
+        Sebastian.forward(64)
+        Sebastian.left(48)
+        Sebastian.forward(130)
+        Sebastian.right(170)
+        Sebastian.forward(170)
+        Sebastian.right(62)
+        Sebastian.forward(200)
+        Sebastian.end_fill()
+        Sebastian.hideturtle()
+        Sebastian.pencolor('red')
+
         # Set the turtle .fillcolor() to orange
         
         # Call the turtle .begin_fill() function

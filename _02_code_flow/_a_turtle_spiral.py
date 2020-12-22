@@ -12,14 +12,19 @@ if __name__ == '__main__':
     window.bgcolor('white')
     
     # Make a new turtle
-    
+    Sebastian = turtle.Turtle()
     # This code sets our shape to a turtle
-    
+    Sebastian.shape("turtle")
     # Set your turtle's speed (0=fastest, 1=slowest, 10=faster)
-    
+    Sebastian.speed(1)
     # Set your turtle's color using .color('green')
-    
+    Sebastian.color('blue')
     # Use a loop to repeat a the code below 50 times
+    for i in range(50):
+        Sebastian.color(getRandomColor())
+        Sebastian.forward(5*i)
+        Sebastian.right(360/7)
+        Sebastian.width(i)
         
         # Set the turtle color to a random color
 
