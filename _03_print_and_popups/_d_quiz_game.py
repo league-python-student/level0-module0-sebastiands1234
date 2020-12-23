@@ -1,19 +1,23 @@
 from tkinter import messagebox, simpledialog, Tk
 
 # Create an if-main code block, *hint, type main then ctrl+space to auto-complete
-    
-    # Make a new window variable, window = Tk()
-    
-    # Hide the window using the window's .withdraw() method
-    
-    # 1. Create a variable to hold the user's score. Set it equal to zero. 
+if __name__ == '__main__':
 
+    # Make a new window variable, window = Tk()
+    window = Tk()
+    # Hide the window using the window's .withdraw() method
+    window.withdraw()
+    # 1. Create a variable to hold the user's score. Set it equal to zero. 
+    score = 0
     # ASK A QUESTION AND CHECK THE ANSWER
 
     #      // 2.  Ask the user a question 
-    
+    name = simpledialog.askstring(title='Question 1', prompt="What is 1 + 1?")
     #      // 3.  Use an if statement to check if their answer is correct
-
+    if name == "2":
+        messagebox.showinfo(message="Correct! ")
+    else:
+        messagebox.showinfo(message="Incorrect :( ")
     #      // 4.  if the user's answer was correct, add one to their score 
  
     # MAKE MORE QUESTIONS. Ask more questions by repeating the above 
